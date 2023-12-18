@@ -6,7 +6,7 @@ Python script that grants hours and validates exercices of the Rosetta website
 Simple just clone or downloads the file and then install the dependencies with:
 
 ```bash
-pip install -r requierements.txt
+pip install -r requirements.txt
 ```
 
 # Usage
@@ -17,11 +17,11 @@ Before running the script you need to get some data:
 - On resetta click on the button with the "Foundations" text (where your lessons are).
 - Wait until the page is fully loaded.
 - In the web inspector enter "start" in the filter bar (take care of searching among all ressources).
-- You must then have only one request. If multiple are present pick the last one (or if you are not confident, redo all the steps).
+- Now, only one request remain. If multiple are present pick the last one (or if you are not confident, redo all the steps).
 - Then right click on the request and select Copy -> copy as curl. If you are on windows choose copy as curl (bash).
 - Then paste it into a file, let's name it **rosetta_meta**.
 
-Now you can run the script. You have two choices
+Now you can run the script. You have two choices:
 - Grant only hours
 - Grant a whole exercice
 
@@ -35,9 +35,9 @@ python rosetta.py -f rosetta_meta -t hours
 
 Where:
 - **rosetta_meta** is the file containing the curl command
-- hours a float value for the number of hours you want (cannot be negative).
+- hours: a float value for the number of hours you want (cannot be negative).
 
-## Grant a whole exercices
+## Grant a whole exercice
 
 **Warning: In order to validate an exercice, you need to have been registered on this exercice.
 First you need to start the exercice, then ignore all the sub questions and launch the command below.
